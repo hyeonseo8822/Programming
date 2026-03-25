@@ -5,7 +5,7 @@
 const resultH1 = document.getElementById("result");
 // const resultH1 = document.querySelector("#result");
 // const plusButton = document.querySelector("button");
-const plusButton = document.getElementsByClassName("plusButton")[0];
+// const plusButton = document.getElementsByClassName("plusButton")[0];
 // const plusButton = document.querySelectorAll(".plusButton")[0];
 
 
@@ -15,7 +15,11 @@ let count = 0;
 //     count++;
 //     resultH1.innerHTML = count;
 // });
-plusButton.onclick = () => {
+// plusButton.onclick = () => {
+//     count++;
+//     resultH1.innerHTML = count;
+// };
+function plus() {
     count++;
     resultH1.innerHTML = count;
-};
+}
