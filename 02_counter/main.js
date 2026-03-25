@@ -1,5 +1,5 @@
-const h1 = document.querySelector('h1');
-const button = document.querySelector('button');
+const h1 = document.getElementById('result');
+const button = document.getElementsByClassName('plusBtn')[0];
 
 let count = 0;
 
