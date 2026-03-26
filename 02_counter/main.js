@@ -19,6 +19,7 @@ let count = 0;
 //     count++;
 //     resultH1.innerHTML = count;
 // };
+resultH1.innerHTML = count;
 function plus() {
     count++;
     resultH1.innerHTML = count;
