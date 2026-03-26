@@ -8,7 +8,7 @@ let count = 0;
 //     h1.textContent = count;
 // });
 
-button.onclick = () => {
-    count++;
+function counter(num = 1) {
+    count += num;
     h1.textContent = count;
-};
+}
