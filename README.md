@@ -6,3 +6,5 @@ vanilla HTML, javaScript
 ```shell
 npm create vite@latest . 
 ```
+
+### CounterApp

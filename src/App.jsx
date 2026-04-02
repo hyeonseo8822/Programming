@@ -1,3 +1,5 @@
+//파일 구조 시험 문제
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
