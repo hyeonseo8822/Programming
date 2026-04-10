@@ -1,25 +1,23 @@
+import './todoList.css'
+
 function TodoList() {
     return (
-        <div>
-            <h1>HyeonDo List</h1>
-            <form>
-                <input type="text" placeholder="할 일을 입력하세요" />
-                <button type="submit">Add</button>
+        <div className="todo">
+            <h1 className="todo__title">HyeonDo List</h1>
+            <form className="todo__form">
+                <input type="text" placeholder="할 일을 입력하세요" className='todo__input' />
+                <button type="submit" className="todo__button todo_button--add">+</button>
             </form>
-            <ul>
-                <li>
-                    <input type="checkbox" id="todo1" />
-                    <label htmlFor="todo1">할 일 1</label>
-                    <button type="button">✏️</button>
-                    <button type="button">❌</button>
+            <ul className="todo__list">
+                <li className="todo__item todo--empty">
+                    <p>할 일 없음.</p>
                 </li>
-                <li>
-                    <input type="checkbox" id="todo2" />
-                    <label htmlFor="todo2">할 일 2</label>
-                    <button type="button">✏️</button>
-                    <button type="button">❌</button>
+                <li className="todo__item todo__item--complete">
+                    <input type="checkbox" id="todo1" className="todo__check"/>
+                    <label htmlFor="todo1" className='todo__label'>할 일 1</label>
+                    <button type="button" className="todo__button todo__button--edit">✏️</button>
+                    <button type="button" className="todo__button todo__button--delete">❌</button>
                 </li>
-                {/* li{할일$}*10 */}
             </ul>
         </div>
     )
