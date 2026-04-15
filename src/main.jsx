@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 // import './index.css'
 import CounterApp from './CounterApp.jsx'
 import './reset.css'
-import TodoList from './TodoList.jsx'
+import TodoListApp from './TodoListApp.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <TodoList />
+    <TodoListApp />
   </StrictMode>,
 )

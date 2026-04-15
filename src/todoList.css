@@ -35,8 +35,8 @@
     cursor: pointer;
 }
 .todo_button--add {
-    background-color: #e2eeff;
-    color: rgb(0, 0, 0);
+    background-color: #b2b7ff;
+    color: rgb(255, 255, 255);
 }
 .todo__item {
     display: flex;
@@ -58,6 +58,8 @@
 
 .todo__button--edit,
 .todo__button--delete {
+    background-color: #ffffff;
+    margin-left: 10px;
     font-size: 0.8rem;
 }
 
