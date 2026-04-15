@@ -1,4 +1,7 @@
 import './todoList.css'
+import TodoListEmpty from './components/TodoListEmpty.jsx'
+import Button from './components/Button.jsx'
+import Checkbox from './components/Checkbox.jsx'
 
 function TodoList() {
     return (
@@ -6,17 +9,20 @@ function TodoList() {
             <h1 className="todo__title">HyeonDo List</h1>
             <form className="todo__form">
                 <input type="text" placeholder="할 일을 입력하세요" className='todo__input' />
-                <button type="submit" className="todo__button todo_button--add">+</button>
+                <Button type="submit" className="todo__button todo_button--add">
+                    +
+                </Button>
             </form>
             <ul className="todo__list">
-                <li className="todo__item todo--empty">
-                    <p>할 일 없음.</p>
-                </li>
+                <TodoListEmpty />
                 <li className="todo__item todo__item--complete">
-                    <input type="checkbox" id="todo1" className="todo__check"/>
-                    <label htmlFor="todo1" className='todo__label'>할 일 1</label>
-                    <button type="button" className="todo__button todo__button--edit">✏️</button>
-                    <button type="button" className="todo__button todo__button--delete">❌</button>
+                    <Checkbox id="1">할일 1</Checkbox>
+                    <Button type="button" className="todo__button todo__button--edit">
+                        ✏️
+                    </Button>
+                    <Button type="button" className="todo__button todo__button--delete">
+                        ❌
+                    </Button>
                 </li>
             </ul>
         </div>
