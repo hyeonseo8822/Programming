@@ -22,7 +22,7 @@ function TodoListApp() {
     return (
         <div className="todo">
             <TodoHeader />
-            <TodoAdder onAddTodo={addTodo} />
+            <TodoAdder addTodo={addTodo} />
             <TodoList todos={todos} />
         </div>
     )
