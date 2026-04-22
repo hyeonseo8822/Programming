@@ -23,7 +23,7 @@ export default function TodoAdder({ addTodo }) {
                 value={inputTodo}
                 onChange={(event) => setInputTodo(event.target.value)}
             />
-            <Button type="submit" className="todo__button todo__button--add">Add</Button>
+            <Button type="submit" className="todo__button todo__button--add">+</Button>
         </form>
     )
 }
